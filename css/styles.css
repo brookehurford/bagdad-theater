@@ -26,13 +26,25 @@ h1, h2, h3 {
 body {
   background-image: url("http://www.bagdadmovies.com/images/bagdad_movies/bg.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   font-family: 'Arimo', sans-serif;
 }
 
+a {
+  color: #DB7E25 !important;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #FFFCF3 !important;
+  text-decoration: none !important;
+  -webkit-transition: color .2s linear !important;
+}
+
 .wrapper{
   max-width: 1000px;
+  padding: 0 3%;
   margin: 0 auto;
   color: white;
   font-family: 'Arimo', sans-serif;
@@ -114,7 +126,7 @@ body {
   background:rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.3);
   clear: both;
-  margin: 5% 3% 1% 3%;
+  margin: 1.5em 0;
   padding: 2em;
   max-width: 400px;
 }
@@ -132,27 +144,87 @@ body {
   margin-top: 0;
 }
 
+.featured{
+  max-width: 400px;
+  overflow: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 2em;
+}
+
+.featured h3 {
+  padding: 0px 0px .75em 0px !important;
+}
+
+.movie-poster{
+  width:30%;
+  float:left;
+  margin: 0 1.5em 1.5em 0;
+}
+
+.movie-title {
+  font-size: 20px;
+}
+
+.movieSummary {
+  clear:both;
+}
+
+.movie {
+  font-size: 15px;
+}
+
+.comingSoon h3 {
+  padding: 1em 0 !important;
+}
+
+.comingSoon {
+  max-width: 400px;
+  overflow: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 2em;
+}
+
+.prices, .about{
+  max-width: 400px;
+  overflow: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 2em;
+}
+
+.prices h3, .about h3 {
+  padding: 1em 0 !important;
+}
+
+iframe {
+  width: 100%;
+}
+
 /* Buttons
 =================*/
 
-.buyTickets a {
+.orange-button{
   width: 45%;
   display: block;
   float: left;
   background-color: #DB7E25;
-  color: white;
+  color: white !important;
+  letter-spacing: 2px;
   text-align: center;
   font-size: 12px;
-  padding: .5em 3em .5em 3em;
+  padding: .5em 2em .5em 2em;
   margin: 0px 1em 1em 0px;
   box-shadow: 0px 5px 0px 0px rgba(174,101,30,1);
 }
 
-.buyTickets a:hover {
+.orange-button:hover {
   background-color: #E19851;
   color: white;
   text-decoration: none;
--webkit-transition: background-color .2s linear; /* for Safari & Chrome */
+  -webkit-transition: background-color .2s linear; /* for Safari & Chrome */
+}
+
+.movie .orange-button {
+  font-size: 15px;
 }
 
 
