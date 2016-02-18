@@ -43,7 +43,7 @@ a:hover {
 }
 
 .wrapper{
-  max-width: 1000px;
+  max-width: 1300px;
   padding: 0 3%;
   margin: 0 auto;
   color: white;
@@ -55,6 +55,11 @@ a:hover {
 
 .logo {
   width: 80%;
+}
+
+.navigation {
+  padding: 2em 0;
+  margin-bottom: 2em;
 }
 
 .navbar-default {
@@ -87,12 +92,6 @@ a:hover {
   border: none !important;
 }
 
-/*.nav ul {
-  list-style: none;
-  margin: 2em;
-  padding: 0;
-}*/
-
 .nav ul {
   padding-left: 1%;
   font-family: 'Arimo', sans-serif;
@@ -118,8 +117,13 @@ a:hover {
 /* Main Body
 =================*/
 
+.col-sm-7 {
+  border: 1px solid red;
+}
+
 .marquee {
-  background:rgba(0, 0, 0, 0.5);
+  background:rgba(234, 234, 234, 0.5);
+
 }
 
 .showtimes {
@@ -128,7 +132,7 @@ a:hover {
   clear: both;
   margin: 1.5em 0;
   padding: 2em;
-  max-width: 400px;
+  max-width: 1000px;
 }
 
 .buyTickets {
@@ -145,7 +149,7 @@ a:hover {
 }
 
 .featured{
-  max-width: 400px;
+  max-width: 100%;
   overflow: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 2em;
@@ -178,14 +182,14 @@ a:hover {
 }
 
 .comingSoon {
-  max-width: 400px;
+  max-width: 100%;
   overflow: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 2em;
 }
 
 .prices, .about{
-  max-width: 400px;
+  max-width: 100%;
   overflow: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 2em;
@@ -196,6 +200,7 @@ a:hover {
 }
 
 iframe {
+  margin-top: 1em;
   width: 100%;
 }
 
@@ -227,15 +232,9 @@ iframe {
   font-size: 15px;
 }
 
-
-
-
-
-
-
-
-
-
+.showtimesLeft, .showtimesRight {
+  border: 1px solid red;
+}
 
 
 /* Media Queries
@@ -244,5 +243,17 @@ iframe {
 @media screen(min-width:750px){
   .wrapper{
     width:90%;
+  }
+}
+
+@media screen(min-width:1200px){
+  .showtimesLeft, .showtimeRight{
+    float: left !important;
+    width: 20% !important;
+  }
+
+  .featured {
+    width: 100%;
+    margin:0;
   }
 }
