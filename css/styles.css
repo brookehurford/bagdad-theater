@@ -117,10 +117,6 @@ a:hover {
 /* Main Body
 =================*/
 
-.col-sm-7 {
-  border: 1px solid red;
-}
-
 .marquee {
   background:rgba(234, 234, 234, 0.5);
 
@@ -230,10 +226,6 @@ iframe {
 
 .movie .orange-button {
   font-size: 15px;
-}
-
-.showtimesLeft, .showtimesRight {
-  border: 1px solid red;
 }
 
 
